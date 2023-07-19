@@ -181,7 +181,12 @@ main {
     margin-right: 70px;
 }
 
-.online-game-container {}
+.online-game-container {
+
+    align-items: center;
+
+    text-align: center;
+}
 
 .online-game {
     justify-content: center;
@@ -233,11 +238,6 @@ main {
 
 }
 
-
-
-
-
-
 .play-game-content {
     width: 50%;
     align-items: center;
@@ -271,10 +271,86 @@ main {
 }
 
 
+/*icon style*/
+.icon-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.icon-btn {
+    border-radius: 50px;
+    background: #FFFFFF;
+    color: #3C354F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
 
 
+.icon-title {
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    gap: 16px;
+}
 
+/*icon style finished*/
+.footer {
+    max-width: 1400px;
+    height: 640px;
+    background: #0B0223;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-left: 500px;
+}
 
+.footer-para {
+    display: flex;
+    text-align: justify;
+    gap: 30px;
+
+}
+
+.footer-icon {
+    display: flex;
+    text-align: justify;
+    gap: 30px;
+
+}
+
+.span-icon {
+    width: 57.13px;
+    height: 40px;
+
+}
+
+.footer-des {
+    display: flex;
+    text-align: justify;
+    gap: 70px;
+
+}
+
+.footer-end {
+    align-items: center;
+    padding-right: 300px;
+}
+
+.end {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    align-items: center;
+}
 
 
 /*media query*/
@@ -284,7 +360,9 @@ main {
     .nav-container,
     .nav-item,
     .banner-container,
-    .banner-img {
+    .banner-img,
+    .game-title,
+    .play-game-container {
         flex-direction: column;
     }
 
@@ -324,10 +402,10 @@ main {
     }
 
     .online-game-img {
-        grid-template-columns: 1fr;
+        flex-direction: row;
+        grid-template-rows: 1f;
         width: 100%;
-        align-items: center;
-        margin: 0 auto;
+
     }
 
     .game-title {
@@ -344,7 +422,11 @@ main {
         text-align: left;
     }
 
+    .icon-container {
+        grid-template-columns: 3;
+    }
 
+    .play-game-img {}
 }
 
 
@@ -359,7 +441,8 @@ main {
     .nav-logo,
     .nav-item,
     .banner-img,
-    .banner-container {
+    .banner-container,
+    .icon-btn {
         flex-direction: column;
     }
 
@@ -398,7 +481,9 @@ main {
 
 
 
-
+    .footer {
+        width: 100%;
+    }
 
 
 }
