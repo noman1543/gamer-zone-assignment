@@ -85,12 +85,101 @@
 }
 
 /*nav style finished*/
+/*banner style*/
+.banner-container {
+    margin: 50px auto 0;
+    max-width: 1400px;
+    min-height: 50px;
+    display: flex;
+    background: #FFF;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content {
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.play-title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.goat-title {
+    text-align: center;
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    justify-content: center;
+}
+
+.banner-para {
+    color: #534C64;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+.banner-content .banner-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.sign-btn {
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.go-btn {
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: #4EC5F7;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-img {
+    width: 50%;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    display: flex;
+}
+
+/*banner section finished*/
 /*media query*/
 /*for mobile*/
 @media screen and (max-width:576px) {
 
     .nav-container,
-    .nav-item {
+    .nav-item,
+    .banner-container,
+    .banner-img {
         flex-direction: column;
     }
 
@@ -113,6 +202,22 @@
         padding: 20px;
     }
 
+    .goat-title {
+        font-size: 40px;
+        padding: 0;
+
+    }
+
+    .banner-content .banner-btn {
+        padding: 10px;
+
+    }
+
+    .banner-img {
+        width: 100%;
+
+    }
+
 }
 
 
@@ -125,7 +230,9 @@
 
     .nav-container,
     .nav-logo,
-    .nav-item {
+    .nav-item,
+    .banner-img,
+    .banner-container {
         flex-direction: column;
     }
 
@@ -143,5 +250,19 @@
         padding-bottom: 10px;
 
     }
+
+    .banner-content .banner-btn {
+        padding: 10px;
+
+    }
+
+    .banner-img {
+        width: 100%;
+        margin-right: 10px;
+        height: 50px;
+
+
+    }
+
 
 }
